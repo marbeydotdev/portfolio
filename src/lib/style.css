@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+    @apply font-sans text-base m-0 p-0 w-full h-full overflow-auto antialiased;
+}
+
+body {
+    @apply dark:bg-zinc-950 bg-zinc-100 dark:text-zinc-100 text-zinc-900
+}
+
+.container {
+    @apply sm:w-3/4 xl:w-1/2 sm:px-0 px-6 w-full mx-auto mt-28;
+}
+
+.nav {
+    @apply text-lg before:bg-zinc-300 before:block before:inset-0 relative before:absolute before:rounded-lg overflow-clip before:p-10 before:[clip-path:circle(0%)] z-10 before:z-0 hover:text-zinc-950 hover:before:[clip-path:circle(100%)] transition-all before:transition-all before:content-['']
+}
+
+.nav-active {
+    @apply text-zinc-100
+}
