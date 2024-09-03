@@ -3,4 +3,4 @@
     export let text
 </script>
 
-<a class="nav" class:nav-active={true} href="{link}">{text}</a>
+<a class="nav special-select" class:nav-active={true} href="{link}">{text}</a>
