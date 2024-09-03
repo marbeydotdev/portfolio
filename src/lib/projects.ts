@@ -2,7 +2,7 @@ export const projects = {
 	"Power2Go": {
 		"name": "Power2Go",
 		"icon": "",
-		"short": "Powerbank loaning system",
+		"short": "Powerbank lending system.",
 		"description": "This project focused on creating a powerbank loaning system where users can sign up for an app, scan the qr code on a physical powerbank station and take out a powerbank. They can be returned to any of the powerbank stations.",
 		"features": [
 			"Quick powerbank lending by using a qr code",

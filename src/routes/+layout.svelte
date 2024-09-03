@@ -8,7 +8,7 @@
     <meta name="theme-color" content="rgb(9,9,30)" />
 </svelte:head>
 
-<div class="container">
+<div class="container mb-14">
     <Header />
     <slot></slot>
 </div>

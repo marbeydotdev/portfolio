@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    @apply sm:w-3/4 xl:w-1/2 sm:px-0 px-6 w-full mx-auto mt-28;
+    @apply sm:w-3/4 xl:w-1/2 sm:px-0 px-6 w-full mx-auto mt-20 sm:mt-28;
 }
 
 .nav {
@@ -21,11 +21,15 @@ body {
 }
 
 .nav-active {
-    @apply text-zinc-950 dark:text-zinc-50
+    @apply font-bold
 }
 
 .special-select {
     @apply before:bg-zinc-800 dark:before:bg-zinc-300 before:block before:-inset-x-6 before:-inset-y-6 before:absolute hover:before:scale-100 before:rounded-full before:scale-0 before:transition-all before:content-[''] before:shadow-lg
+}
+
+.fancy-hover {
+    @apply before:-inset-4 before:absolute before:rounded before:transition-all hover:before:bg-black/10 dark:hover:before:bg-white/10 before:translate-y-16 hover:before:translate-y-0;
 }
 
 h1 {

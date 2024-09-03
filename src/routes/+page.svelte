@@ -8,7 +8,7 @@
 
 <div class="mb-14" in:fly={{y: 50}}>
 	<h1>{languageSet.AboutTitle}</h1>
-	<p>{languageSet.AboutIntro}</p>
+	<p class="text-balance">{languageSet.AboutIntro}</p>
 </div>
 
 <div class="flex mt-2 gap-20 flex-col sm:flex-row" in:fly={{y: 50, delay: 100}}>
