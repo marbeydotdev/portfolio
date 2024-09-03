@@ -1,16 +1,17 @@
 <script lang="ts">
 	import { content } from '$lib/content';
 	import { user_config } from '$lib/config';
+	import {fly} from 'svelte/transition';
 
 	let languageSet = content[user_config.language]
 </script>
 
-<div class="mb-5">
+<div class="mb-5" in:fly={{y: 10}}>
 	<h1>{languageSet.AboutTitle}</h1>
 	<p>{languageSet.AboutIntro}</p>
 </div>
 
-<div class="flex mt-2 gap-20">
+<div class="flex mt-2 gap-20" in:fly={{y: 10, duration: 1000}}>
 	<div class="flex flex-1 flex-col">
 		<span class="font-semibold mb-4">Web development</span>
 		<span>C#</span>
