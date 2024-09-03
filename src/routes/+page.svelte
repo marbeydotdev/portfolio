@@ -6,12 +6,12 @@
 	let languageSet = content[user_config.language]
 </script>
 
-<div class="mb-5" in:fly={{y: 10}}>
+<div class="mb-14" in:fly={{y: 50}}>
 	<h1>{languageSet.AboutTitle}</h1>
 	<p>{languageSet.AboutIntro}</p>
 </div>
 
-<div class="flex mt-2 gap-20" in:fly={{y: 10, duration: 1000}}>
+<div class="flex mt-2 gap-20 flex-col sm:flex-row" in:fly={{y: 50, delay: 100}}>
 	<div class="flex flex-1 flex-col">
 		<span class="font-semibold mb-4">Web development</span>
 		<span>C#</span>

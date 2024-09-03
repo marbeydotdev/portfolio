@@ -5,7 +5,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      "sans": ["Poppins"]
+      "sans": ["Poppins", "Arial"],
+      "mono": ["monospace"]
     },
     extend: {},
   },

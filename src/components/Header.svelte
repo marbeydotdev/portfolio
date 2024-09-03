@@ -5,7 +5,7 @@ import { user_config } from '$lib/config';
 let languageSet = content[user_config.language]
 </script>
 
-<div class="flex mb-5 items-center">
+<div class="flex mb-10 items-center">
     <h1 class="text-5xl font-bold">Zavid</h1>
     <span class="flex-grow"></span>
     <div class="flex gap-10">

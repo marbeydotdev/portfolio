@@ -17,11 +17,11 @@ body {
 }
 
 .nav {
-    @apply text-lg relative  overflow-visible  hover:!text-zinc-50 z-10 before:!-z-10 dark:hover:text-zinc-950  transition-all
+    @apply text-lg relative  overflow-visible  hover:text-zinc-50 z-10 before:-z-10 dark:hover:text-zinc-950 dark:text-zinc-50  transition-all
 }
 
 .nav-active {
-    @apply text-zinc-950
+    @apply text-zinc-950 dark:text-zinc-50
 }
 
 .special-select {
