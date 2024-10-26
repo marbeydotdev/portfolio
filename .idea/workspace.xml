@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/power2go/accountinfo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/power2go/history.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/power2go/homescreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/power2go/info.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/power2go/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/power2go/station.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/power2go/stations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/projects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +19,7 @@
       <list>
         <option value="+page.svelte" />
         <option value="TypeScript File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -40,12 +32,12 @@
     &quot;assignee&quot;: &quot;marbeydotdev&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/marbeydotdev/portfolio.git",
-    "accountId": "2d3b2ac3-e565-47f7-b3bb-4393866493de"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/marbeydotdev/portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;2d3b2ac3-e565-47f7-b3bb-4393866493de&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -64,9 +56,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Projects\\zavid-portfolio\\node_modules\\prettier",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Projects\\zavid-portfolio\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
