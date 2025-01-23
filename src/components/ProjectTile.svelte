@@ -6,7 +6,7 @@
 <div in:fly={{y: 50, delay: 50}} class="mb-8 flex gap-4 flex-col">
 	<div class="grid grid-cols-2 gap-2">
 		{#each Object.keys(projects) as project}
-			<a href="/project/{project}" class="flex relative items-center gap-3 p-3 rounded border text-sm">
+			<a href="/project/{project}" class="flex relative items-center gap-3 p-3 rounded border text-sm sm:col-span-1 col-span-2">
 				<img alt="logo" src="{projects[project].icon}" class="aspect-square h-12 w-12">
 				<span class="block">{projects[project].name}</span>
 			</a>
