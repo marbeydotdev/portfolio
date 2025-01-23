@@ -1,15 +1,14 @@
 <script lang="ts">
 	import {fly} from 'svelte/transition';
-	import {page} from '$app/stores';
+	import {page} from '$app/state';
 	import { goto } from '$app/navigation';
 	import { projects } from '$lib/projects.ts';
 	import MediaViewer from '../../../components/MediaViewer.svelte';
 
-	if (!Object.keys(projects).includes($page.params.slug)){
+	if (!Object.keys(projects).includes(page.params.slug)){
 		goto("/")
 	}
-
-	let project = projects[$page.params.slug];
+	let project = projects[page.params.slug];
 </script>
 
 <div class="absolute h-12 left-0 right-0 top-0 blur-3xl opacity-50" style="background: {project.color}">

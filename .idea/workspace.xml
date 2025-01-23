@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ Dockerfile">
+    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+">
+      <change afterPath="$PROJECT_DIR$/src/lib/config.svelte.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MediaViewer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaViewer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navlink.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navlink.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +100,7 @@
       <workItem from="1737451220232" duration="5827000" />
       <workItem from="1737471722577" duration="6226000" />
       <workItem from="1737572535458" duration="15940000" />
-      <workItem from="1737629938308" duration="285000" />
+      <workItem from="1737629938308" duration="2837000" />
     </task>
     <task id="LOCAL-00001" summary="+ dockerfile">
       <option name="closed" value="true" />
@@ -116,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729963990952</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="+">
+      <option name="closed" value="true" />
+      <created>1737630355148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737630355148</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +144,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="+ dockerfile" />
     <MESSAGE value="+ Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Dockerfile" />
+    <MESSAGE value="+" />
+    <option name="LAST_COMMIT_MESSAGE" value="+" />
   </component>
 </project>

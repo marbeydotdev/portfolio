@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { content } from '$lib/content';
-	import { user_config } from '$lib/config';
+	import { user_config } from '$lib/config.svelte.ts';
 	import {fly} from 'svelte/transition';
 
-	let languageSet = content[user_config.language]
+	let languageSet = $derived(content[user_config.language])
 </script>
 
 <div class="mb-8" in:fly={{y: 50}}>

@@ -9,7 +9,7 @@ export const content: {
 	}
 } = {
 	"en": {
-		"NavAbout": "About",
+		"NavAbout": "Home",
 		"NavProjects": "Projects",
 		"NavContact": "Contact",
 		"AboutTitle": "Zavid van den Worm | Software- and Web Developer",
@@ -25,7 +25,7 @@ export const content: {
 		"AboutTechStackHeader": "Tecnologías"
 	},
 	"nl": {
-		"NavAbout": "Over mij",
+		"NavAbout": "Home",
 		"NavProjects": "Projecten",
 		"NavContact": "Contact",
 		"AboutTitle": "Zavid van den Worm | Software- en Webontwikkelaar",
