@@ -14,9 +14,9 @@
 		currentMedia = currentMedia < (media.length - 1) ? currentMedia + 1 : 0
 	}
 
-	function pauseIfUnfocused(idx: number, element: HTMLObjectElement) {
-		if (idx !== currentMedia) {
-			element.contentDocument.querySelector("video").pause()
+	function pauseIfUnfocused(idx: number, element: EventTarget | null) {
+		if (idx !== currentMedia && element instanceof HTMLObjectElement) {
+			element.contentDocument?.querySelector("video")?.pause()
 		}
 
 	}
