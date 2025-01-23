@@ -6,9 +6,13 @@
 	let languageSet = content[user_config.language]
 </script>
 
-<div class="mb-14" in:fly={{y: 50}}>
+<div class="mb-8" in:fly={{y: 50}}>
 	<h1>{languageSet.AboutTitle}</h1>
 	<p class="text-balance">{languageSet.AboutIntro}</p>
+</div>
+
+<div in:fly={{y: 50, delay: 50}} class="bg-yellow-50 border p-5 rounded-xl mb-8">
+	<a class="" href="/project/">View</a>
 </div>
 
 <div class="flex mt-2 gap-20 flex-col sm:flex-row" in:fly={{y: 50, delay: 100}}>

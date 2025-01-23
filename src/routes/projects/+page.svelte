@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { projects } from '$lib/projects';
+	import { projects } from '$lib/projects.ts';
 	import {fly} from 'svelte/transition';
 	import {base} from '$app/paths';
 </script>

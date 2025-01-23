@@ -6,9 +6,11 @@
 <svelte:head>
     <meta name="description" content="The portfolio website belonging to Zavid van den Worm">
     <meta name="theme-color" content="rgb(9,9,30)" />
+    <title>Zavid van den Worm | Portfolio</title>
 </svelte:head>
 
-<div class="container mb-14">
-    <Header />
+<Header />
+
+<div class="relative container mb-14 p-8 !px-8 scroll-smooth">
     <slot></slot>
 </div>

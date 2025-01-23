@@ -1,6 +1,47 @@
 import {base} from '$app/paths';
 
-export const projects = {
+export const projects: {
+	[key: string]: {
+		"name": string,
+		"icon": string,
+		"color": string,
+		"short": string,
+		"description": string,
+		"features": string[],
+		"media": {
+			"url": string,
+			"description": string
+		}[],
+		"contributions": string[]
+	}
+} = {
+	"DHLConsolidator": {
+		"name": "DHL Consolidator",
+		"icon": `${base}/dhlconsolidator/icon.png`,
+		"color": "#ffc207",
+		"short": "Dedicated application replacement for DHL's macro-based Excel spreadsheets for shipping.",
+		"description": "This project focused on creating a web application that replaces DHL's macro-based Excel spreadsheets for the shipping department. It serves as an all-in-one replacement, that combines label printing, manifest printing and scanning into a single lightweight (~10kb!) and performant application.",
+		"features": [
+			"Scan cases (and their respective dealers) for verification.",
+			"Print scannable labels for every dealer.",
+			"Print manifests for the transporters.",
+			"Check for scan errors.",
+			"Switch scanlists by scanning a printable code, instead of having to walk back to the computer.",
+			"Persistently store every scan (locally) to prevent data-loss on power failure or reboot."
+		],
+		"media": [
+			{
+				"url": `${base}/dhlconsolidator/consolidatordemo.mp4`,
+				"description": "The application demo video."
+			}
+			],
+		"contributions": [
+			"Programmed the scanner functionality",
+			"Programmed the scanlist functionality",
+			"Programmed the manifest functionality",
+			"Programmed the error checking functionality",
+			"Programmed the data persistence functionality"]
+		},
 	"Power2Go": {
 		"name": "Power2Go",
 		"icon": `${base}/power2go/icon.png`,
@@ -11,7 +52,7 @@ export const projects = {
 			"View nearby stations sorted by distance in the app.",
 			"Fully automatic powerbank dispensing."
 		],
-		"color": 20,
+		"color": "#fb8535",
 		"media": [
 			{
 				"url": `${base}/power2go/info.mp4`,
@@ -48,7 +89,7 @@ export const projects = {
 	"SHC": {
 		"name": "Squad Health Check Front-office",
 		"icon": `${base}/shc/icon.png`,
-		"color": 42,
+		"color": "#e2ca02",
 		"short": "Questionnaires that help gauge factors like code quality, team satisfaction, etc.",
 		"description": "This project focused on creating the front-end for a questionnaire application that can be used to determine how well certain aspects of development are going within a team of people assigned to a project at a certain company.",
 		"features": [
