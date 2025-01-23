@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+">
-      <change afterPath="$PROJECT_DIR$/src/components/ProjectTile.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/q3dashboard/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/q3dashboard/q4dashboard.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MediaViewer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaViewer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/config.svelte.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config.svelte.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/projects.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
+    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ ux">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737630355148</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="+ ux">
+      <option name="closed" value="true" />
+      <created>1737665230357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737665230357</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +147,7 @@
     <MESSAGE value="+ dockerfile" />
     <MESSAGE value="+ Dockerfile" />
     <MESSAGE value="+" />
-    <option name="LAST_COMMIT_MESSAGE" value="+" />
+    <MESSAGE value="+ ux" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ ux" />
   </component>
 </project>
