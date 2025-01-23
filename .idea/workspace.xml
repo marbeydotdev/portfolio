@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+">
-      <change afterPath="$PROJECT_DIR$/src/lib/config.svelte.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectTile.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/q3dashboard/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/q3dashboard/q4dashboard.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MediaViewer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaViewer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navlink.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navlink.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/content.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/config.svelte.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config.svelte.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/projects.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
         <option value="TypeScript File" />
         <option value="Dockerfile" />
         <option value="MediaViewer" />
+        <option value="ProjectTile" />
       </list>
     </option>
   </component>
@@ -42,12 +42,12 @@
     &quot;assignee&quot;: &quot;marbeydotdev&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/marbeydotdev/portfolio.git",
-    "accountId": "2d3b2ac3-e565-47f7-b3bb-4393866493de"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/marbeydotdev/portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;2d3b2ac3-e565-47f7-b3bb-4393866493de&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -61,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Projects/jackedbox/zavid-portfolio/static/dhlconsolidator",
+    "last_opened_file_path": "C:/Projects/jackedbox/zavid-portfolio/static/q3dashboard",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,13 +69,17 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\zavid\\WebstormProjects\\portfolio\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\jackedbox\zavid-portfolio\static\q3dashboard" />
       <recent name="C:\Projects\jackedbox\zavid-portfolio\static\dhlconsolidator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\jackedbox\zavid-portfolio\static\q3dashboard" />
     </key>
   </component>
   <component name="SharedIndexes">

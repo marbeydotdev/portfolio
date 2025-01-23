@@ -1,3 +1,3 @@
-export const user_config = $state({
-	"language": "en"
+export const userConfig = $state({
+	language: "en",
 })
