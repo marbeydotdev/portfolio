@@ -39,12 +39,18 @@
 			{/each}
 	</div>
 	<div class="flex justify-between items-center mb-4 mt-5 text-neutral-300">
-		<button disabled="{media.length <= 1}" class="disabled:bg-zinc-900/80 disabled:text-zinc-600 disabled:active:scale-100 block p-3 w-24 text-sm aspect-video relative bg-zinc-800 rounded-full transition-all active:scale-95" onclick={mediaPrev}>{'<--'}</button>
-		<span class="text-xs block text-zinc-400">viewing {currentMedia + 1} of {media.length}</span>
-		<button disabled="{media.length <= 1}" class="disabled:bg-zinc-900/80 disabled:text-zinc-600 disabled:active:scale-100 block p-3 w-24 text-sm aspect-video relative bg-zinc-800 rounded-full transition-all active:scale-95" onclick={mediaNext}>{'-->'}</button>
+		<button disabled="{media.length <= 1}" class="navbtn" onclick={mediaPrev}>{'<--'}</button>
+		<span class="text-xs block text-zinc-600 dark:text-zinc-400">viewing {currentMedia + 1} of {media.length}</span>
+		<button disabled="{media.length <= 1}" class="navbtn" onclick={mediaNext}>{'-->'}</button>
 	</div>
 	{#key currentMedia}
-		<small class="block text-zinc-300" in:fade>{media.at(currentMedia)?.description}</small>
+		<small class="block text-zinc-700 dark:text-zinc-300" in:fade>{media.at(currentMedia)?.description}</small>
 	{/key}
 
 </div>
+
+<style lang="postcss">
+	.navbtn {
+			@apply bg-zinc-200 text-zinc-950 disabled:bg-zinc-100 disabled:text-zinc-700 dark:disabled:bg-zinc-900/80 dark:disabled:text-zinc-600 disabled:active:scale-100 block p-3 w-24 text-sm aspect-video relative dark:bg-zinc-800 rounded-full transition-all active:scale-95;
+	}
+</style>

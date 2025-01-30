@@ -30,20 +30,20 @@
 <MediaViewer media={project.media} />
 
 <div in:fly={{y: 50, delay: 300}} class="block relative before:inset-0 before:bg-gradient-to-r before:to-50% before:from-white/20">
-	<h2 class="project-color mb-4 text-xl" style="color: hsl({project.color} 100%, 60%) !important;">Features</h2>
+	<h2 class="project-color mb-4 text-xl">Features</h2>
 
 	<div class="block mb-6 text-sm">
 		{#each project.features as feature}
-			<span class='block p-5 mb-3 rounded border border-neutral-400 text-neutral-200 backdrop-blur'>{feature}</span>
+			<span class='block p-5 mb-3 rounded border border-neutral-400 dark:text-neutral-200 backdrop-blur'>{feature}</span>
 		{/each}
 	</div>
 </div>
 
 
 <div in:fly={{y: 50, delay: 400}} class="block text-sm">
-<h2 class="mb-4 text-xl text-[{project.color}]">Contributions</h2>
+<h2 class="mb-4 text-xl">Contributions</h2>
 	{#each project.contributions as contribution, index}
-		<span in:fly|global={{y: 50, delay: (400 + (index * 100))}} class="block p-5 mb-3 rounded border border-neutral-400 text-neutral-200 ">{contribution}</span>
+		<span in:fly|global={{y: 50, delay: (400 + (index * 100))}} class="block p-5 mb-3 rounded border border-neutral-400 dark:text-neutral-200 ">{contribution}</span>
 		{/each}
 </div>
 

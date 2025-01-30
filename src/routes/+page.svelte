@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { content } from '$lib/content';
-	import { user_config } from '$lib/config.svelte.ts';
+	import { userConfig } from '$lib/config.svelte.ts';
 	import {fly} from 'svelte/transition';
+	import ProjectTile from '../components/ProjectTile.svelte';
 
-	let languageSet = $derived(content[user_config.language])
+	let languageSet = $derived(content[userConfig.language])
 </script>
 
 <div class="mb-8" in:fly={{y: 50}}>
@@ -11,9 +12,7 @@
 	<p class="text-balance">{languageSet.AboutIntro}</p>
 </div>
 
-<div in:fly={{y: 50, delay: 50}} class="bg-yellow-50 border p-5 rounded-xl mb-8">
-	<a class="" href="/project/">View</a>
-</div>
+<ProjectTile />
 
 <div class="flex mt-2 gap-20 flex-col sm:flex-row" in:fly={{y: 50, delay: 100}}>
 	<div class="flex flex-1 flex-col">

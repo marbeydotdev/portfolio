@@ -12,9 +12,40 @@ export const projects: {
 			"url": string,
 			"description": string
 		}[],
-		"contributions": string[]
+		"contributions": string[],
+		"technologies": string[]
 	}
 } = {
+	"Q3MonitoringDashboard": {
+		"name": "Q3 Monitoring Dashboard",
+		"icon": `${base}/q3dashboard/logo.svg`,
+		"color": "#ff0000",
+		"short": "Machine/mold monitoring and maintenance dashboard.",
+		"description": "This project focused on creating a dashboard for Q3 Concept B.V. that allows users to monitor machines and molds in real-time. Using the dashboard, users can also plan maintenance for molds using a manual or milestone-based approach.",
+		"features": [
+			"Real-time monitoring of machines and molds.",
+			"Ability to plan maintenance for molds using a manual or milestone-based approach.",
+			"Historical usage insights for machines and molds, optimized using materialized views.",
+			"Sleek and responsive user interface."
+		],
+		"media": [
+			{
+				"url": `${base}/q3dashboard/q4dashboard.mp4`,
+				"description": "The application demo video."
+			}
+		],
+		"contributions": [
+			"Programmed the maintenance calendar.",
+			"Created a mold health assessment using patterns in historical data.",
+			"Assisted in database design.",
+			"Designed front-end elements using Figma."
+		],
+		"technologies": [
+			"Supabase",
+			"NextJS",
+			"Docker"
+		]
+	},
 	"DHLConsolidator": {
 		"name": "DHL Consolidator",
 		"icon": `${base}/dhlconsolidator/icon.png`,
@@ -40,7 +71,10 @@ export const projects: {
 			"Programmed the scanlist functionality",
 			"Programmed the manifest functionality",
 			"Programmed the error checking functionality",
-			"Programmed the data persistence functionality"]
+			"Programmed the data persistence functionality"],
+		"technologies": [
+			"SvelteKit"
+		]
 		},
 	"Power2Go": {
 		"name": "Power2Go",
@@ -83,7 +117,11 @@ export const projects: {
 			"Handled the programming of the physical powerbank station slots, running on a Raspberry Pi 4b.",
 			"Designed and implemented the front-end.",
 			"Created the infomercial."
-		]
+		],
+		"technologies": [
+			"ASP.NET Blazor",
+			"Raspberry Pi"
+			]
 	},
 
 	"SHC": {
@@ -118,6 +156,10 @@ export const projects: {
 			"Helped implement the design into the actual application",
 			"Helped connect the database layer to the front-end",
 			"Implemented progress saving."
+		],
+		"technologies": [
+			"SvelteKit",
+			"ASP.NET"
 		]
 	}
 }
