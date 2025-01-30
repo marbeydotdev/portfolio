@@ -18,7 +18,7 @@ export const projects: {
 } = {
 	"Q3MonitoringDashboard": {
 		"name": "Q3 Monitoring Dashboard",
-		"icon": `${base}/q3dashboard/logo.svg`,
+		"icon": `${base}/assets/q3dashboard/logo.svg`,
 		"color": "#ff0000",
 		"short": "Machine/mold monitoring and maintenance dashboard.",
 		"description": "This project focused on creating a dashboard for Q3 Concept B.V. that allows users to monitor machines and molds in real-time. Using the dashboard, users can also plan maintenance for molds using a manual or milestone-based approach.",
@@ -30,7 +30,7 @@ export const projects: {
 		],
 		"media": [
 			{
-				"url": `${base}/q3dashboard/q4dashboard.mp4`,
+				"url": `${base}/assets/q3dashboard/q4dashboard.mp4`,
 				"description": "The application demo video."
 			}
 		],
@@ -48,7 +48,7 @@ export const projects: {
 	},
 	"DHLConsolidator": {
 		"name": "DHL Consolidator",
-		"icon": `${base}/dhlconsolidator/icon.png`,
+		"icon": `${base}/assets/dhlconsolidator/icon.png`,
 		"color": "#ffc207",
 		"short": "Dedicated application replacement for DHL's macro-based Excel spreadsheets for shipping.",
 		"description": "This project focused on creating a web application that replaces DHL's macro-based Excel spreadsheets for the shipping department. It serves as an all-in-one replacement, that combines label printing, manifest printing and scanning into a single lightweight (~10kb!) and performant application.",
@@ -62,7 +62,7 @@ export const projects: {
 		],
 		"media": [
 			{
-				"url": `${base}/dhlconsolidator/consolidatordemo.mp4`,
+				"url": `${base}/assets/dhlconsolidator/consolidatordemo.mp4`,
 				"description": "The application demo video."
 			}
 			],
@@ -78,7 +78,7 @@ export const projects: {
 		},
 	"Power2Go": {
 		"name": "Power2Go",
-		"icon": `${base}/power2go/icon.png`,
+		"icon": `${base}/assets/power2go/icon.png`,
 		"short": "Powerbank lending system.",
 		"description": "This project focused on creating a powerbank loaning system where users can sign up for an app, scan the qr code on a physical powerbank station and take out a powerbank. They can be returned to any of the powerbank stations.",
 		"features": [
@@ -89,27 +89,27 @@ export const projects: {
 		"color": "#fb8535",
 		"media": [
 			{
-				"url": `${base}/power2go/info.mp4`,
+				"url": `${base}/assets/power2go/info.mp4`,
 				"description": "The project infomercial, in Dutch."
 			},
 			{
-				"url": `${base}/power2go/accountinfo.png`,
+				"url": `${base}/assets/power2go/accountinfo.png`,
 				"description": "The account screen, where account information can be changed."
 			},
 			{
-				"url": `${base}/power2go/history.png`,
+				"url": `${base}/assets/power2go/history.png`,
 				"description": "The loaning history page, where users can see where and how long they loaned a powerbank."
 			},
 			{
-				"url": `${base}/power2go/homescreen.png`,
+				"url": `${base}/assets/power2go/homescreen.png`,
 				"description": "The landing page of the app."
 			},
 			{
-				"url": `${base}/power2go/login.png`,
+				"url": `${base}/assets/power2go/login.png`,
 				"description": "The login page of the app."
 			},
 			{
-				"url": `${base}/power2go/stations.png`,
+				"url": `${base}/assets/power2go/stations.png`,
 				"description": "The powerbank station listing in the app."
 			}
 		],
@@ -126,7 +126,7 @@ export const projects: {
 
 	"SHC": {
 		"name": "Squad Health Check Front-office",
-		"icon": `${base}/shc/icon.png`,
+		"icon": `${base}/assets/shc/icon.png`,
 		"color": "#e2ca02",
 		"short": "Questionnaires that help gauge factors like code quality, team satisfaction, etc.",
 		"description": "This project focused on creating the front-end for a questionnaire application that can be used to determine how well certain aspects of development are going within a team of people assigned to a project at a certain company.",
@@ -138,15 +138,15 @@ export const projects: {
 		],
 		"media": [
 			{
-				"url": `${base}/shc/erd.jpg`,
+				"url": `${base}/assets/shc/erd.jpg`,
 				"description": "Database diagram."
 			},
 			{
-				"url":`${base}/shc/analysis.pdf`,
+				"url":`${base}/assets/shc/analysis.pdf`,
 				"description": "Analysis document."
 			},
 			{
-				"url": `${base}/shc/figma.png`,
+				"url": `${base}/assets/shc/figma.png`,
 				"description": "Figma design."
 			}
 		],

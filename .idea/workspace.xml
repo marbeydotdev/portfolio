@@ -4,9 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ ux">
+    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+">
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/services/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/netisan.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectTile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectTile.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/projects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dhlconsolidator/consolidatordemo.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/dhlconsolidator/consolidatordemo.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dhlconsolidator/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/dhlconsolidator/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/power2go/accountinfo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/power2go/accountinfo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/power2go/history.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/power2go/history.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/power2go/homescreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/power2go/homescreen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/power2go/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/power2go/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/power2go/info.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/power2go/info.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/power2go/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/power2go/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/power2go/station.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/power2go/station.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/power2go/stations.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/power2go/stations.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/q3dashboard/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/q3dashboard/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/q3dashboard/q4dashboard.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/q3dashboard/q4dashboard.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/shc/analysis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/shc/analysis.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/shc/erd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/shc/erd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/shc/figma.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/shc/figma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/shc/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/shc/icon.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +48,20 @@
         <option value="Dockerfile" />
         <option value="MediaViewer" />
         <option value="ProjectTile" />
+        <option value="+page" />
+        <option value="Footer" />
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -47,29 +84,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Projects/jackedbox/zavid-portfolio/static/q3dashboard",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;netisan&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zavid/WebstormProjects/portfolio/static&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\zavid\\WebstormProjects\\portfolio\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\zavid\\WebstormProjects\\portfolio\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zavid\WebstormProjects\portfolio\static" />
       <recent name="C:\Projects\jackedbox\zavid-portfolio\static\q3dashboard" />
       <recent name="C:\Projects\jackedbox\zavid-portfolio\static\dhlconsolidator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zavid\WebstormProjects\portfolio\static\assets" />
+      <recent name="C:\Users\zavid\WebstormProjects\portfolio\static" />
       <recent name="C:\Projects\jackedbox\zavid-portfolio\static\q3dashboard" />
     </key>
   </component>
@@ -96,6 +139,9 @@
       <workItem from="1737471722577" duration="6226000" />
       <workItem from="1737572535458" duration="15940000" />
       <workItem from="1737629938308" duration="2837000" />
+      <workItem from="1738253815330" duration="151000" />
+      <workItem from="1738253978956" duration="3976000" />
+      <workItem from="1738257976744" duration="3060000" />
     </task>
     <task id="LOCAL-00001" summary="+ dockerfile">
       <option name="closed" value="true" />
