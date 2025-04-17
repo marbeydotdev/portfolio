@@ -46,36 +46,36 @@ export const projects: {
 			"Docker"
 		]
 	},
-	"DHLConsolidator": {
-		"name": "DHL Consolidator",
-		"icon": `${base}/dhlconsolidator/icon.png`,
-		"color": "#ffc207",
-		"short": "Dedicated application replacement for DHL's macro-based Excel spreadsheets for shipping.",
-		"description": "This project focused on creating a web application that replaces DHL's macro-based Excel spreadsheets for the shipping department. It serves as an all-in-one replacement, that combines label printing, manifest printing and scanning into a single lightweight (~10kb!) and performant application.",
-		"features": [
-			"Scan cases (and their respective dealers) for verification.",
-			"Print scannable labels for every dealer.",
-			"Print manifests for the transporters.",
-			"Check for scan errors.",
-			"Switch scanlists by scanning a printable code, instead of having to walk back to the computer.",
-			"Persistently store every scan (locally) to prevent data-loss on power failure or reboot."
-		],
-		"media": [
-			{
-				"url": `${base}/dhlconsolidator/consolidatordemo.mp4`,
-				"description": "The application demo video."
-			}
-			],
-		"contributions": [
-			"Programmed the scanner functionality",
-			"Programmed the scanlist functionality",
-			"Programmed the manifest functionality",
-			"Programmed the error checking functionality",
-			"Programmed the data persistence functionality"],
-		"technologies": [
-			"SvelteKit"
-		]
-		},
+	// "DHLConsolidator": {
+	// 	"name": "DHL Consolidator",
+	// 	"icon": `${base}/dhlconsolidator/icon.png`,
+	// 	"color": "#ffc207",
+	// 	"short": "Dedicated application replacement for DHL's macro-based Excel spreadsheets for shipping.",
+	// 	"description": "This project focused on creating a web application that replaces DHL's macro-based Excel spreadsheets for the shipping department. It serves as an all-in-one replacement, that combines label printing, manifest printing and scanning into a single lightweight and performant application.",
+	// 	"features": [
+	// 		"Scan cases (and their respective dealers) for verification.",
+	// 		"Print scannable labels for every dealer.",
+	// 		"Print manifests for the transporters.",
+	// 		"Check for scan errors.",
+	// 		"Switch scanlists by scanning a printable code, instead of having to walk back to the computer.",
+	// 		"Persistently store every scan (locally) to prevent data-loss on power failure or reboot."
+	// 	],
+	// 	"media": [
+	// 		{
+	// 			"url": `${base}/dhlconsolidator/consolidatordemo.mp4`,
+	// 			"description": "The application demo video."
+	// 		}
+	// 		],
+	// 	"contributions": [
+	// 		"Programmed the scanner functionality",
+	// 		"Programmed the scanlist functionality",
+	// 		"Programmed the manifest functionality",
+	// 		"Programmed the error checking functionality",
+	// 		"Programmed the data persistence functionality"],
+	// 	"technologies": [
+	// 		"SvelteKit"
+	// 	]
+	// 	},
 	"Power2Go": {
 		"name": "Power2Go",
 		"icon": `${base}/power2go/icon.png`,

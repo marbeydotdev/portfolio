@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ ux">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectTile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectTile.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/projects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dhlconsolidator/consolidatordemo.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +59,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\prettier",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\zavid\\WebstormProjects\\portfolio\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\zavid\\WebstormProjects\\portfolio\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -163,8 +164,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="+ dockerfile" />
     <MESSAGE value="+ Dockerfile" />
-    <MESSAGE value="+" />
     <MESSAGE value="+ ux" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ ux" />
+    <MESSAGE value="+" />
+    <option name="LAST_COMMIT_MESSAGE" value="+" />
   </component>
 </project>
