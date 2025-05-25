@@ -5,10 +5,12 @@
 
 body, html {
     @apply font-sans text-base m-0 p-0 w-full h-full overflow-auto antialiased;
+
 }
 
 body {
-    @apply dark:bg-[url(/bg.png)] bg-zinc-100 dark:text-zinc-100 text-zinc-900
+    @apply dark:bg-neutral-950 dark:[background-image:radial-gradient(circle_at_1px_1px,rgb(23,23,23)_1px,transparent_0)] [background-image:radial-gradient(circle_at_1px_1px,rgb(244,244,244)_1px,transparent_0)] bg-zinc-100 dark:text-zinc-100 text-zinc-900;
+    background-size: 16px 16px;
 }
 
 .container {
