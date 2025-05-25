@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ dhl sux">
-      <change afterPath="$PROJECT_DIR$/src/components/NiceFooter.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/placeholder.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ rework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectTile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectTile.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/content.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,7 @@
       <workItem from="1737471722577" duration="6226000" />
       <workItem from="1737572535458" duration="15940000" />
       <workItem from="1737629938308" duration="2837000" />
-      <workItem from="1748115520693" duration="21750000" />
+      <workItem from="1748115520693" duration="22899000" />
     </task>
     <task id="LOCAL-00001" summary="+ dockerfile">
       <option name="closed" value="true" />
@@ -173,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744916064910</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="+ rework">
+      <option name="closed" value="true" />
+      <created>1748210255015</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748210255015</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +187,7 @@
     <MESSAGE value="+ ux" />
     <MESSAGE value="+" />
     <MESSAGE value="+ dhl sux" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ dhl sux" />
+    <MESSAGE value="+ rework" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ rework" />
   </component>
 </project>
