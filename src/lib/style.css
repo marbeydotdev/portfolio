@@ -3,44 +3,44 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
-    @apply font-sans text-base m-0 p-0 w-full h-full overflow-auto antialiased;
-
+body,
+html {
+	@apply font-sans text-base m-0 p-0 w-full h-full overflow-auto antialiased;
 }
 
 body {
-    @apply dark:bg-neutral-950 dark:[background-image:radial-gradient(circle_at_1px_1px,rgb(23,23,23)_1px,transparent_0)] [background-image:radial-gradient(circle_at_1px_1px,rgb(244,244,244)_1px,transparent_0)] bg-zinc-100 dark:text-zinc-100 text-zinc-900;
-    background-size: 16px 16px;
+	@apply dark:bg-neutral-950 dark:[background-image:radial-gradient(circle_at_1px_1px,rgb(23,23,23)_1px,transparent_0)] [background-image:radial-gradient(circle_at_1px_1px,rgb(244,244,244)_1px,transparent_0)] bg-zinc-100 dark:text-zinc-100 text-zinc-900;
+	background-size: 16px 16px;
 }
 
 .container {
-    @apply sm:w-3/4 xl:w-1/2 sm:px-0 px-6 w-full mx-auto;
+	@apply sm:w-3/4 xl:w-1/2 sm:px-0 px-6 w-full mx-auto;
 }
 
 .breakpoints {
-    @apply sm:w-3/4 xl:w-1/2 sm:px-0 px-6 w-full mx-auto;
+	@apply sm:w-3/4 xl:w-1/2 sm:px-0 px-6 w-full mx-auto;
 }
 
 .nav {
-    @apply text-lg relative  overflow-visible  hover:text-zinc-50 z-10 before:-z-10 dark:hover:text-zinc-950 dark:text-zinc-50  transition-all
+	@apply text-lg relative  overflow-visible  hover:text-zinc-50 z-10 before:-z-10 dark:hover:text-zinc-950 dark:text-zinc-50  transition-all;
 }
 
 .nav-active {
-    @apply underline underline-offset-2
+	@apply underline underline-offset-2;
 }
 
 .special-select {
-    @apply before:bg-zinc-800 dark:before:bg-zinc-300 before:block before:-inset-x-6 before:-inset-y-6 before:absolute hover:before:scale-100 before:rounded-full before:scale-0 before:transition-all before:content-[''] before:shadow-lg
+	@apply before:bg-zinc-800 dark:before:bg-zinc-300 before:block before:-inset-x-6 before:-inset-y-6 before:absolute hover:before:scale-100 before:rounded-full before:scale-0 before:transition-all before:content-[''] before:shadow-lg;
 }
 
 .fancy-hover {
-    @apply before:-inset-4 before:absolute before:rounded before:transition-all hover:before:bg-black/10 dark:hover:before:bg-white/10 before:translate-y-16 hover:before:translate-y-0 transition-all active:scale-90;
+	@apply before:-inset-4 before:absolute before:rounded before:transition-all hover:before:bg-black/10 dark:hover:before:bg-white/10 before:translate-y-16 hover:before:translate-y-0 transition-all active:scale-90;
 }
 
 h1 {
-    @apply text-xl font-bold
+	@apply text-xl font-bold;
 }
 
 h2 {
-    @apply font-bold
+	@apply font-bold;
 }

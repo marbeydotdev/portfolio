@@ -1,11 +1,11 @@
-FROM oven/bun AS build
+FROM oven/bun:alpine
 
-ADD . /app
 WORKDIR /app
-
+COPY package.json package.json
 RUN bun install
+
+COPY . .
 RUN bun run build
 
-FROM nginx:stable
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 3000
+ENTRYPOINT ["bun", "./build"]

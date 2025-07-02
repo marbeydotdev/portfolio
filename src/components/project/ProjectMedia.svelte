@@ -30,33 +30,27 @@
 </script>
 
 <div class="block mb-8" in:fly={{ y: 50, delay: 200 }}>
-	<div class="w-full h-72 mb-4 relative overflow-clip">
+	<div class="w-full h-72 mb-8 relative overflow-clip">
 		{#each media as m, idx}
 			<object
 				onload={(e) => pauseIfUnfocused(idx, e.target)}
-				class="w-full h-full rounded object-contain transition-all duration-500 absolute"
+				class="w-full h-full rounded object-contain transition-all duration-500 absolute bg-transparent"
 				data={m.url}
 				title={m.description}
-				style="{getCalculateTransform(idx)}"
+				style={getCalculateTransform(idx)}
 			></object>
 		{/each}
 	</div>
-	<div class="flex justify-between items-center mb-4 mt-5 text-neutral-300">
-		<button disabled={media.length <= 1} class="navbtn" onclick={mediaPrev}>{'<--'}</button>
-		<span class="text-xs block text-zinc-600 dark:text-zinc-400"
-			>viewing {currentMedia + 1} of {media.length}</span
-		>
-		<button disabled={media.length <= 1} class="navbtn" onclick={mediaNext}>{'-->'}</button>
-	</div>
-	{#key currentMedia}
-		<small class="block text-zinc-700 dark:text-zinc-300" in:fade
-			>{media.at(currentMedia)?.description}</small
-		>
-	{/key}
+
+		<div class="flex gap-3 text-sm dark:text-zinc-300 flex-wrap">
+			{#each media as m, idx}
+				<button onclick={() => currentMedia = idx} class="px-3 py-1 flex rounded-full {idx === currentMedia ? 'bg-neutral-100 text-neutral-900' : ''}">{m.description}</button>
+			{/each}
+		</div>
 </div>
 
 <style lang="postcss">
-	.navbtn {
-		@apply bg-zinc-200 text-zinc-950 disabled:bg-zinc-100 disabled:text-zinc-700 dark:disabled:bg-zinc-900/80 dark:disabled:text-zinc-600 disabled:active:scale-100 block p-3 w-24 text-sm aspect-video relative dark:bg-zinc-800 rounded-full transition-all active:scale-95;
-	}
+    .navbtn {
+        @apply bg-zinc-200 text-zinc-950 disabled:bg-zinc-100 disabled:text-zinc-700 dark:disabled:bg-zinc-900/80 dark:disabled:text-zinc-600 disabled:active:scale-100 block p-3 w-24 text-sm aspect-video relative dark:bg-zinc-800 rounded-full transition-all active:scale-95;
+    }
 </style>
