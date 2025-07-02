@@ -1,11 +1,6 @@
 <script lang="ts">
-	import { content } from '$lib/content';
-	import { userConfig } from '$lib/config.svelte.ts';
 	import { fly } from 'svelte/transition';
 	import ProjectTile from '../components/ProjectTile.svelte';
-	import NiceFooter from '../components/NiceFooter.svelte';
-
-	let languageSet = $derived(content[userConfig.language]);
 </script>
 
 <div class="flex flex-col md:flex-row justify-between mb-14 mt-10" in:fly|global={{ y: 50 }}>

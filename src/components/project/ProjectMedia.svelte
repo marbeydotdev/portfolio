@@ -44,13 +44,8 @@
 
 		<div class="flex gap-3 text-sm dark:text-zinc-300 flex-wrap">
 			{#each media as m, idx}
-				<button onclick={() => currentMedia = idx} class="px-3 py-1 flex rounded-full {idx === currentMedia ? 'bg-neutral-100 text-neutral-900' : ''}">{m.description}</button>
+				<button onclick={() => currentMedia = idx} class="px-3 py-2 cursor-pointer active:scale-95 hover:bg-base-200 transition-all duration-100 flex rounded-sm {idx === currentMedia ? '!bg-base-content text-base-100' : ''}">{m.description}</button>
 			{/each}
 		</div>
 </div>
 
-<style lang="postcss">
-    .navbtn {
-        @apply bg-zinc-200 text-zinc-950 disabled:bg-zinc-100 disabled:text-zinc-700 dark:disabled:bg-zinc-900/80 dark:disabled:text-zinc-600 disabled:active:scale-100 block p-3 w-24 text-sm aspect-video relative dark:bg-zinc-800 rounded-full transition-all active:scale-95;
-    }
-</style>

@@ -14,6 +14,7 @@
 	let project = projects.find(p => p.identifier === projectIdentifier)!;
 
 	onMount(() => {
+		window.scrollTo(0, 0);
 		if (!project){
 			goto("/projects")
 		}

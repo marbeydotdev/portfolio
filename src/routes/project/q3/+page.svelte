@@ -4,6 +4,8 @@
 	import ProjectMedia from '../../../components/project/ProjectMedia.svelte';
 	import ProjectFeature from '../../../components/project/ProjectFeature.svelte';
 	import ProjectFeatures from '../../../components/project/ProjectFeatures.svelte';
+	import ProjectContributions from '../../../components/project/ProjectContributions.svelte';
+	import ProjectContribution from '../../../components/project/ProjectContribution.svelte';
 
 	const media = [
 		{
@@ -44,5 +46,18 @@
 		</ProjectFeature>
 	</ProjectFeatures>
 	<ProjectMedia media={media} />
-
+	<ProjectContributions>
+		<ProjectContribution>
+			Programmed the maintenance calendar.
+		</ProjectContribution>
+		<ProjectContribution>
+			Created a mold health assessment using patterns in historical data.
+		</ProjectContribution>
+		<ProjectContribution>
+			Assisted in database design.
+		</ProjectContribution>
+		<ProjectContribution>
+			Designed front-end elements using Figma.
+		</ProjectContribution>
+	</ProjectContributions>
 </Project>
