@@ -8,7 +8,7 @@
 		<a
 			href="/project/{project.identifier}"
 			in:fly|global={{ y: 50, delay: index * 100 }}
-			class="flex flex-col items-center relative rounded-xl cursor-pointer fancy-hover"
+			class="flex flex-col items-center relative rounded-xl cursor-pointer fancy-hover from-[{project.color}] to-transparent bg-gradient-to-b"
 		>
 			<div class="flex flex-row flex-grow w-full">
 				<div class="flex-grow">
@@ -23,7 +23,7 @@
 			</div>
 			<div class="flex gap-2 w-full text-sm mt-3">
 				{#each project.technologies as technology}
-					<span class="flex items-center justify-center px-3 py-2 border rounded-sm"
+					<span class="flex font-mono items-center justify-center px-3 py-1 text-xs rounded-full bg-base-200"
 						>{technology}</span
 					>
 				{/each}

@@ -5,26 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ bg">
+      <change afterPath="$PROJECT_DIR$/src/lib/blog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/[slug]/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/project/retime/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navlink.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navlink.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/Project.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/Project.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/ProjectContribution.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/ProjectContribution.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project/ProjectContributions.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/ProjectContributions.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/ProjectFeature.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/ProjectFeature.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project/ProjectMedia.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/ProjectMedia.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/projects.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/contact/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contact/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/project/power2go/+page.svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/project/q3/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/q3/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="+page.svelte" />
-        <option value="TypeScript File" />
         <option value="Dockerfile" />
         <option value="MediaViewer" />
         <option value="ProjectTile" />
@@ -46,12 +45,13 @@
         <option value="ProjectDescription" />
         <option value="ProjectMedia" />
         <option value="ProjectMediaItem" />
-        <option value="+page" />
         <option value="ProjectSection" />
         <option value="ProjectFeatures" />
         <option value="ProjectFeature" />
         <option value="ProjectContributions" />
         <option value="ProjectContribution" />
+        <option value="TypeScript File" />
+        <option value="+page" />
       </list>
     </option>
   </component>
@@ -72,7 +72,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/marbeydotdev/portfolio.git",
-    "accountId": "e44fd084-8d78-4e08-8234-75bac60dc4fe"
+    "accountId": "2d3b2ac3-e565-47f7-b3bb-4393866493de"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -83,23 +83,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "components",
-    "last_opened_file_path": "C:/Users/zavid/WebstormProjects/portfolio/static",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\zavid\\WebstormProjects\\portfolio\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Projects\\jackedbox\\zavid-portfolio\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zavid/WebstormProjects/portfolio/static&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\zavid\\WebstormProjects\\portfolio\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\zavid\\WebstormProjects\\portfolio\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zavid\WebstormProjects\portfolio\static" />
@@ -107,13 +107,14 @@
       <recent name="C:\Projects\jackedbox\zavid-portfolio\static\dhlconsolidator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zavid\WebstormProjects\portfolio\src\routes\api\blogs" />
       <recent name="C:\Projects\jackedbox\zavid-portfolio\static\q3dashboard" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
       </set>
     </attachedChunks>
   </component>
@@ -134,6 +135,8 @@
       <workItem from="1737572535458" duration="15940000" />
       <workItem from="1737629938308" duration="2837000" />
       <workItem from="1748115520693" duration="24068000" />
+      <workItem from="1751536260183" duration="12631000" />
+      <workItem from="1751579893437" duration="5789000" />
     </task>
     <task id="LOCAL-00001" summary="+ dockerfile">
       <option name="closed" value="true" />

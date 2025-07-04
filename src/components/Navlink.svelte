@@ -3,8 +3,8 @@
 	import { base } from '$app/paths';
 
 	interface Props {
-		link: any;
-		text: any;
+		link: string;
+		text: string;
 	}
 
 	let { link, text }: Props = $props();

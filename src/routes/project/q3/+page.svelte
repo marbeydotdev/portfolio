@@ -28,6 +28,7 @@
 	<ProjectDescription>
 		This project focused on creating a dashboard for Q3 Concept B.V. that allows users to monitor machines and molds in real-time. Using the dashboard, users can also plan maintenance for molds using a manual or milestone-based approach.
 	</ProjectDescription>
+	<ProjectMedia media={media} />
 	<ProjectFeatures>
 		<ProjectFeature>
 			<span class="block">
@@ -45,7 +46,6 @@
 			Sleek and responsive user interface.
 		</ProjectFeature>
 	</ProjectFeatures>
-	<ProjectMedia media={media} />
 	<ProjectContributions>
 		<ProjectContribution>
 			Programmed the maintenance calendar.

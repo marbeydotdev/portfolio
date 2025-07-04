@@ -1,17 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import 'tailwindcss';
 @plugin 'daisyui' {
-	themes: light --default, black --prefersdark;
+	themes: light --default, forest --prefersdark;
 }
 
 body,
 html {
-	@apply font-sans text-base m-0 p-0 w-full h-full overflow-auto antialiased;
+	@apply font-[Inter] text-base m-0 p-0 w-full h-full overflow-auto antialiased;
 }
 
 body {
 	@apply dark:[background-image:radial-gradient(circle_at_1px_1px,rgb(23,23,23)_1px,transparent_0)] [background-image:radial-gradient(circle_at_1px_1px,rgb(244,244,244)_1px,transparent_0)];
 	background-size: 16px 16px;
+}
+
+code {
+	@apply block p-5 my-5 text-sm bg-base-content/5 rounded-2xl border border-base-content/10;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+	@apply text-primary font-semibold;
+}
+
+/* Strings */
+.hljs-string,
+.hljs-attr {
+	@apply text-success;
+}
+
+/* Numbers */
+.hljs-number,
+.hljs-regexp,
+.hljs-addition {
+	@apply text-accent;
+}
+
+/* Comments */
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion {
+	@apply text-base-content opacity-60 italic;
+}
+
+/* Variables and names */
+.hljs-name,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-selector-id,
+.hljs-selector-class {
+	@apply text-secondary;
+}
+
+/* Functions */
+.hljs-function,
+.hljs-title,
+.hljs-built_in {
+	@apply text-info font-medium;
+}
+
+/* Types */
+.hljs-type,
+.hljs-class {
+	@apply text-warning;
+}
+
+/* Operators */
+.hljs-operator,
+.hljs-punctuation {
+	@apply text-base-content;
+}
+
+/* Meta and preprocessor */
+.hljs-meta,
+.hljs-meta-keyword {
+	@apply text-neutral;
+}
+
+/* Attributes */
+.hljs-attribute {
+	@apply text-secondary;
+}
+
+/* Symbols */
+.hljs-symbol,
+.hljs-bullet {
+	@apply text-accent;
+}
+
+/* Emphasis */
+.hljs-emphasis {
+	@apply italic;
+}
+
+.hljs-strong {
+	@apply font-bold;
 }
 
 .container {
@@ -23,15 +109,15 @@ body {
 }
 
 .nav {
-	@apply text-lg relative  overflow-visible  hover:text-zinc-50 z-10 before:-z-10 dark:hover:text-zinc-950 dark:text-zinc-50  transition-all;
+	@apply text-base-content hover:text-base-100 text-lg relative overflow-visible z-10 before:-z-10 transition-all;
 }
 
 .nav-active {
-	@apply underline underline-offset-2;
+	@apply bg-base-200 before:!bg-base-content before:!scale-100 text-base-100;
 }
 
 .special-select {
-	@apply before:bg-zinc-800 dark:before:bg-zinc-300 before:block before:-inset-x-6 before:-inset-y-6 before:absolute hover:before:scale-100 before:rounded-full before:scale-0 before:transition-all before:content-[''] before:shadow-lg;
+	@apply before:bg-base-content/50 before:block before:-inset-4 before:absolute hover:before:scale-100 before:rounded-full before:scale-0 before:transition-all before:content-[''] before:shadow-lg;
 }
 
 .fancy-hover {

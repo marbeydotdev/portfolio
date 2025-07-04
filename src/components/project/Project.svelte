@@ -28,11 +28,15 @@
 ></div>
 
 <div in:fly={{ y: 50 }} class="flex flex-col mb-3">
-	<div class="flex items-center mb-4">
+	<div class="flex items-center">
 		<img alt="logo" src={project.icon} class="aspect-square h-12 w-12 mr-2 inline-block" />
 		<h1 class="text-lg text-balance" style="color: {project.color}">{project.title}</h1>
 	</div>
-
+	<div class="flex items-center mb-4 ml-14 text-xs gap-3">
+		{#each project.technologies as tech (tech)}
+			<span class="flex px-3 py-1 rounded-full bg-base-300">{tech}</span>
+		{/each}
+	</div>
 	<p class="block text-sm ml-14">{project.description}</p>
 </div>
 

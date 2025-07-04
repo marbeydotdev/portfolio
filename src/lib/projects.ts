@@ -1,25 +1,27 @@
 export const projects: {identifier: string, title: string, description: string, icon: string, color: string, technologies: string[]}[] = [
 	{
+		identifier: "retime",
+		title: "ReTime",
+		description: "Formula-based remixing plugin for music software.",
+		icon: "/retime/favicon.png",
+		color: "rgb(214 122 127)",
+		technologies: [
+			"HISE", "HISEscript", "VST", "Audio"
+		]
+	},
+	{
 		identifier: "q3",
 		title: "Q3 Monitoring Dashboard",
 		description: "Monitoring and maintenance solution for injection molds.",
 		icon: "/q3/logo.svg",
 		color: '#ff0000',
 		technologies: [
+			"Web",
 			"Supabase",
 			"NextJS",
 			"Docker"
 		]
 	},
-	{
-		identifier: "power2go",
-		title: 'Power2Go',
-		icon: `/power2go/icon.png`,
-		description: 'Powerbank lending system.',
-		color: '#fb8535',
-
-		technologies: ['ASP.NET Blazor', 'Raspberry Pi']
-	}
 ]
 
 // export const projects: {
