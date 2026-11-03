@@ -29,21 +29,21 @@
 	}
 </script>
 
-<div class="block mb-8" in:fly={{ y: 50, delay: 200 }}>
-	<div class="w-full h-72 mb-4 relative overflow-clip">
+<div class="mb-8 block" in:fly={{ y: 50, delay: 200 }}>
+	<div class="relative mb-4 h-72 w-full overflow-clip">
 		{#each media as m, idx}
 			<object
 				onload={(e) => pauseIfUnfocused(idx, e.target)}
-				class="w-full h-full rounded object-contain transition-all duration-500 absolute"
+				class="absolute h-full w-full rounded object-contain transition-all duration-500"
 				data={m.url}
 				title={m.description}
-				style="{getCalculateTransform(idx)}"
+				style={getCalculateTransform(idx)}
 			></object>
 		{/each}
 	</div>
-	<div class="flex justify-between items-center mb-4 mt-5 text-neutral-300">
+	<div class="mt-5 mb-4 flex items-center justify-between text-neutral-300">
 		<button disabled={media.length <= 1} class="navbtn" onclick={mediaPrev}>{'<--'}</button>
-		<span class="text-xs block text-zinc-600 dark:text-zinc-400"
+		<span class="block text-xs text-zinc-600 dark:text-zinc-400"
 			>viewing {currentMedia + 1} of {media.length}</span
 		>
 		<button disabled={media.length <= 1} class="navbtn" onclick={mediaNext}>{'-->'}</button>
@@ -57,6 +57,6 @@
 
 <style lang="postcss">
 	.navbtn {
-		@apply bg-zinc-200 text-zinc-950 disabled:bg-zinc-100 disabled:text-zinc-700 dark:disabled:bg-zinc-900/80 dark:disabled:text-zinc-600 disabled:active:scale-100 block p-3 w-24 text-sm aspect-video relative dark:bg-zinc-800 rounded-full transition-all active:scale-95;
+		@apply relative block aspect-video w-24 rounded-full bg-zinc-200 p-3 text-sm text-zinc-950 transition-all active:scale-95 disabled:bg-zinc-100 disabled:text-zinc-700 disabled:active:scale-100 dark:bg-zinc-800 dark:disabled:bg-zinc-900/80 dark:disabled:text-zinc-600;
 	}
 </style>

@@ -29,12 +29,12 @@
 	}
 </script>
 
-<div class="block mb-8" in:fly={{ y: 50, delay: 200 }}>
-	<div class="w-full h-72 mb-8 relative overflow-clip">
+<div class="mb-8 block" in:fly={{ y: 50, delay: 200 }}>
+	<div class="relative mb-8 h-72 w-full overflow-clip">
 		{#each media as m, idx}
 			<object
 				onload={(e) => pauseIfUnfocused(idx, e.target)}
-				class="w-full h-full rounded object-contain transition-all duration-500 absolute bg-transparent"
+				class="absolute h-full w-full rounded bg-transparent object-contain transition-all duration-500"
 				data={m.url}
 				title={m.description}
 				style={getCalculateTransform(idx)}
@@ -42,10 +42,15 @@
 		{/each}
 	</div>
 
-		<div class="flex gap-3 text-sm dark:text-zinc-300 flex-wrap">
-			{#each media as m, idx}
-				<button onclick={() => currentMedia = idx} class="px-3 py-2 cursor-pointer active:scale-95 hover:bg-base-200 transition-all duration-100 flex rounded-sm {idx === currentMedia ? '!bg-base-content text-base-100' : ''}">{m.description}</button>
-			{/each}
-		</div>
+	<div class="flex flex-wrap gap-3 text-sm dark:text-zinc-300">
+		{#each media as m, idx}
+			<button
+				onclick={() => (currentMedia = idx)}
+				class="hover:bg-base-200 flex cursor-pointer rounded-sm px-3 py-2 transition-all duration-100 active:scale-95 {idx ===
+				currentMedia
+					? '!bg-base-content text-base-100'
+					: ''}">{m.description}</button
+			>
+		{/each}
+	</div>
 </div>
-

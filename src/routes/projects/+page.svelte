@@ -1,29 +1,28 @@
 <script lang="ts">
-	import { projects } from '$lib/projects.ts';
 	import { fly } from 'svelte/transition';
+	import { resolve } from '$app/paths';
+	import type { PageProps } from './$types';
+	let { data }: PageProps = $props();
 </script>
 
 <div class="flex flex-col gap-14">
-	{#each projects as project, index}
+	{#each data.projects as project, index (index)}
 		<a
-			href="/project/{project.identifier}"
+			href={resolve(`project/${project.identifier}`)}
 			in:fly|global={{ y: 50, delay: index * 100 }}
-			class="flex flex-col items-center relative rounded-xl cursor-pointer fancy-hover from-[{project.color}] to-transparent bg-gradient-to-b"
+			class="fancy-hover relative flex cursor-pointer flex-col items-center rounded-xl from-[{project.color}] bg-gradient-to-b to-transparent"
 		>
-			<div class="flex flex-row flex-grow w-full">
+			<div class="flex w-full flex-grow flex-row">
 				<div class="flex-grow">
-					<span class="font-semibold text-lg">{project.title}</span>
+					<span class="text-lg font-semibold">{project.title}</span>
 					<p>{project.description}</p>
 				</div>
-				<img
-					class="object-contain w-14 aspect-square ml-10"
-					alt="icon"
-					src={project.icon}
-				/>
+				<img class="ml-10 aspect-square w-14 object-contain" alt="icon" src={project.icon} />
 			</div>
-			<div class="flex gap-2 w-full text-sm mt-3">
-				{#each project.technologies as technology}
-					<span class="flex font-mono items-center justify-center px-3 py-1 text-xs rounded-full bg-base-200"
+			<div class="mt-3 flex w-full gap-2 text-sm">
+				{#each project.tags as technology, i (i)}
+					<span
+						class="bg-base-200 flex items-center justify-center rounded-full px-3 py-1 font-mono text-xs"
 						>{technology}</span
 					>
 				{/each}

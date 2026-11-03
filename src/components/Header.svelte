@@ -1,14 +1,15 @@
 <script>
-	import Navlink from './Navlink.svelte';
+	import { resolve } from '$app/paths';
+import Navlink from './Navlink.svelte';
 </script>
 
 <div
-	class="sticky bg-base-100/50 backdrop-blur-2xl z-[100] top-0 pt-12 pb-8 border-b border-base-content/15"
+	class="bg-base-100/50 border-base-content/15 sticky top-0 z-[100] border-b pt-12 pb-8 backdrop-blur-2xl"
 >
-	<div class="flex flex-col sm:flex-row sm:items-center breakpoints !px-8">
-		<a class="text-3xl font-bold mb-8 sm:mb-0" href="/">Zavid</a>
+	<div class="breakpoints flex flex-col !px-8 sm:flex-row sm:items-center">
+		<a class="mb-8 text-3xl font-bold sm:mb-0" href={resolve("/")}>Zavid</a>
 		<span class="sm:flex-grow"></span>
-		<div class="flex gap-10 ml-auto items-center">
+		<div class="ml-auto flex items-center gap-10">
 			<Navlink link="/" text="Home" />
 			<Navlink link="/projects" text="Projects" />
 			<Navlink link="/blog" text="Blog" />
