@@ -123,7 +123,7 @@ code {
 }
 
 .fancy-hover {
-	@apply transition-all before:absolute before:-inset-4 before:translate-y-16 before:rounded before:transition-all hover:before:translate-y-0 hover:before:bg-black/10 active:scale-90 dark:hover:before:bg-white/10;
+	@apply transition-all before:pointer-events-none before:absolute before:-inset-4 before:translate-y-16 before:rounded before:transition-all hover:before:translate-y-0 hover:before:bg-black/10 active:scale-90 dark:hover:before:bg-white/10;
 }
 
 h1 {

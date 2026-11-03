@@ -11,3 +11,13 @@ export interface Project {
 	colorHue: number;
 	content: string;
 }
+export interface Blog {
+	identifier: string;
+	title: string;
+	shortDescription: string;
+	description: string;
+	tags: string[];
+	published: boolean;
+	date: string;
+	content: string;
+}

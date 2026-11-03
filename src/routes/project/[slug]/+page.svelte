@@ -1,27 +1,23 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
-	let { data }: PageProps = $props();
 	import hljs from "highlight.js";
 
 	import {fly} from 'svelte/transition';
 
 	import { Marked } from 'marked';
 	import { markedHighlight } from 'marked-highlight';
-	import { onMount } from 'svelte';
 
-	let marked: Marked | undefined = $state();
+	let { data }: PageProps = $props();
 
-	onMount(() => {
-		marked = new Marked().use(
-			markedHighlight({
-				langPrefix: "language-",
-				highlight: (code, lang) => {
-					const language = hljs.getLanguage(lang) ? lang : "plaintext";
-					return hljs.highlight(code, { language }).value;
-				}
-			}),
-		)
-	})
+	let marked = new Marked().use(
+		markedHighlight({
+			langPrefix: "language-",
+			highlight: (code, lang) => {
+				const language = hljs.getLanguage(lang) ? lang : "plaintext";
+				return hljs.highlight(code, { language }).value;
+			}
+		}),
+	)
 
 </script>
 

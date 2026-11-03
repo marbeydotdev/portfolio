@@ -1,20 +1,28 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { decodeSlug, posts } from '#lib/blog.ts';
-	import { page } from '$app/state';
-	import { goto } from '$app/navigation';
-	import { marked } from 'marked';
+	import { Marked } from 'marked';
+	import { markedHighlight } from 'marked-highlight';
+	import hljs from 'highlight.js';
+	import type { PageProps } from './$types';
+	let { data }: PageProps = $props();
+	import { fly } from 'svelte/transition';
 
-	let post = {};
-
-	onMount(() => {
-		post = posts.find((p) => p.slug === decodeSlug(page.params.slug));
-		if (!post) {
-			goto('/blog');
-		}
-	});
+	let marked = new Marked().use(
+		markedHighlight({
+			langPrefix: "language-",
+			highlight: (code, lang) => {
+				const language = hljs.getLanguage(lang) ? lang : "plaintext";
+				return hljs.highlight(code, { language }).value;
+			}
+		}),
+	)
 </script>
 
-<h1 class="mb-5">{post.slug}</h1>
+<div class="mb-5" in:fly={{y: 50}}>
+	<h1>{data.blog.title}</h1>
+</div>
 
-{@html marked.parse(post.content ?? '')}
+<div class="prose" in:fly={{y: 50, delay: 100}}>
+	{@html marked.parse(data.blog.content)}
+</div>
+
+
