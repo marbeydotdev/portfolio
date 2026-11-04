@@ -7,6 +7,7 @@ tags:
   - HISEscript
   - VST
   - Audio
+  - Solo
 published: true
 dateStart:
 dateEnd:
@@ -15,10 +16,38 @@ contributions:
   - helped this and ht
 ---
 
-## Hi
+# header 1
+asdasd
+## header 2
+asdasd
+
+### header 3
+asdasd
+
+#### header 4
+asdasd
 
 Hello
 
-asdasd
+this is some code
 
-![](test.png)
+```javascript
+let example = 123
+async function hello() {
+	if (example === 123){
+		console.log("hi")
+	}
+}
+let example = 123
+async function hello() {
+	if (example === 123){
+		console.log("hi")
+	}
+}
+let example = 123
+async function hello() {
+	if (example === 123){
+		console.log("hi")
+	}
+}
+```

@@ -1,135 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import 'tailwindcss';
+
 @plugin 'daisyui' {
-	themes:
-		light --default,
-		forest --prefersdark;
+    themes: light --default,
+    forest --prefersdark;
 }
 
 body,
 html {
-	@apply m-0 h-full w-full overflow-auto p-0 font-[Inter] text-base antialiased;
+    @apply m-0 h-full w-full overflow-auto p-0 font-[Inter] text-base antialiased;
 }
 
 body {
-	@apply [background-image:radial-gradient(circle_at_1px_1px,rgb(244,244,244)_1px,transparent_0)] dark:[background-image:radial-gradient(circle_at_1px_1px,rgb(23,23,23)_1px,transparent_0)];
-	background-size: 16px 16px;
 }
 
 code {
-	@apply bg-base-content/5 border-base-content/10 my-5 block rounded-2xl border p-5 text-sm;
+    @apply max-h-70 overflow-auto bg-base-content/1 shadow-xl border-base-content/10 rounded-sm my-5 block border p-5 text-sm font-[JetBrains_Mono]
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-section,
-.hljs-link {
-	@apply text-primary font-semibold;
-}
-
-/* Strings */
-.hljs-string,
-.hljs-attr {
-	@apply text-success;
-}
-
-/* Numbers */
-.hljs-number,
-.hljs-regexp,
-.hljs-addition {
-	@apply text-accent;
-}
-
-/* Comments */
-.hljs-comment,
-.hljs-quote,
-.hljs-deletion {
-	@apply text-base-content italic opacity-60;
-}
-
-/* Variables and names */
-.hljs-name,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-selector-id,
-.hljs-selector-class {
-	@apply text-secondary;
-}
-
-/* Functions */
-.hljs-function,
-.hljs-title,
-.hljs-built_in {
-	@apply text-info font-medium;
-}
-
-/* Types */
-.hljs-type,
-.hljs-class {
-	@apply text-warning;
-}
-
-/* Operators */
-.hljs-operator,
-.hljs-punctuation {
-	@apply text-base-content;
-}
-
-/* Meta and preprocessor */
-.hljs-meta,
-.hljs-meta-keyword {
-	@apply text-neutral;
-}
-
-/* Attributes */
-.hljs-attribute {
-	@apply text-secondary;
-}
-
-/* Symbols */
-.hljs-symbol,
-.hljs-bullet {
-	@apply text-accent;
-}
-
-/* Emphasis */
-.hljs-emphasis {
-	@apply italic;
-}
-
-.hljs-strong {
-	@apply font-bold;
-}
 
 .container {
-	@apply mx-auto w-full px-6 sm:w-3/4 sm:px-0 xl:w-1/2;
+    @apply mx-auto w-full px-6 sm:w-3/4 sm:px-0 xl:w-1/2;
 }
 
 .breakpoints {
-	@apply mx-auto w-full px-6 sm:w-3/4 sm:px-0 xl:w-1/2;
+    @apply mx-auto w-full px-6 sm:w-3/4 sm:px-0 xl:w-1/2;
 }
 
 .nav {
-	@apply text-base-content hover:text-base-100 relative z-10 overflow-visible text-lg transition-all before:-z-10;
+    @apply text-base-content hover:text-base-100 relative z-10 overflow-visible text-lg transition-all before:-z-10;
 }
 
 .nav-active {
-	@apply bg-base-200 before:!bg-base-content text-base-100 before:!scale-100;
+    @apply bg-base-200 before:!bg-base-content text-base-100 before:!scale-100;
 }
 
 .special-select {
-	@apply before:bg-base-content/50 before:absolute before:-inset-4 before:block before:scale-0 before:rounded-full before:shadow-lg before:transition-all before:content-[''] hover:before:scale-100;
+    @apply before:bg-base-content/50 before:absolute before:-inset-4 before:block before:scale-0 before:rounded-full before:shadow-lg before:transition-all before:content-[''] hover:before:scale-100;
 }
 
 .fancy-hover {
-	@apply transition-all before:pointer-events-none before:absolute before:-inset-4 before:translate-y-16 before:rounded before:transition-all hover:before:translate-y-0 hover:before:bg-black/10 active:scale-90 dark:hover:before:bg-white/10;
+    @apply transition-all before:pointer-events-none before:absolute before:-inset-4 before:translate-y-16 before:rounded before:transition-all hover:before:translate-y-0 hover:before:bg-black/10 active:scale-90 dark:hover:before:bg-white/10;
 }
 
 h1 {
-	@apply text-xl font-bold;
+    @apply text-xl font-bold;
 }
 
 h2 {
-	@apply font-bold;
+    @apply font-bold;
+}
+
+.sh__token--keyword {
+    @apply text-yellow-600!
+}
+
+.sh__token--identifier {
+    @apply text-yellow-500!
+}
+
+.sh__token--sign {
+    @apply text-yellow-600!
+}
+
+.sh__token--class {
+    @apply text-yellow-600!
+}
+
+.sh__token--property {
+    @apply text-yellow-600!
+}
+
+.sh__token--string {
+    @apply text-yellow-200!
+}
+
+.markdown h1 {
+    @apply text-5xl my-3
+}
+
+.markdown h2 {
+    @apply text-4xl my-3
+}
+
+.markdown h3 {
+    @apply text-3xl my-3
+}
+
+.markdown h4 {
+    @apply text-2xl my-3
 }

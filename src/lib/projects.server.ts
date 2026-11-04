@@ -7,7 +7,7 @@ export const getProjects = async () => {
 
 export const getProject = async (id: string) => {
 	const projects = await getProjects()
-	return projects.find(p => p.identifier == id) ?? null
+	return projects.find(p => p.identifier === id) ?? null
 }
 
 export const getBlogs = async () => {
@@ -17,5 +17,5 @@ export const getBlogs = async () => {
 
 export const getBlog = async (id: string) => {
 	const blogs = await getBlogs();
-	return blogs.find(b => b.identifier == id) ?? null;
+	return blogs.find(b => b.identifier === id) ?? null;
 };

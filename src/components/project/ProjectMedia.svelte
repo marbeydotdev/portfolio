@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fly, fade } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 
 	interface Props {
 		media: { url: string; description: string }[];

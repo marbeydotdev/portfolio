@@ -1,24 +1,20 @@
 <script lang="ts">
-	import type { PageProps } from './$types';
-	import hljs from "highlight.js";
+import { Marked } from "marked";
+import { markedHighlight } from "marked-highlight";
+import { highlight } from "sugar-high";
+import { fly } from "svelte/transition";
+import type { PageProps } from "./$types";
 
-	import {fly} from 'svelte/transition';
+let { data }: PageProps = $props();
 
-	import { Marked } from 'marked';
-	import { markedHighlight } from 'marked-highlight';
-
-	let { data }: PageProps = $props();
-
-	let marked = new Marked().use(
-		markedHighlight({
-			langPrefix: "language-",
-			highlight: (code, lang) => {
-				const language = hljs.getLanguage(lang) ? lang : "plaintext";
-				return hljs.highlight(code, { language }).value;
-			}
-		}),
-	)
-
+let marked = new Marked().use(
+	markedHighlight({
+		langPrefix: "language-",
+		highlight: (code) => {
+			return highlight(code);
+		},
+	}),
+);
 </script>
 
 <div
@@ -39,7 +35,7 @@
 	<p class="ml-14 block text-sm">{data.project.description}</p>
 </div>
 
-	<div in:fly={{y: 50, delay: 100}}>
-		<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	<div in:fly={{y: 50, delay: 100}} class="markdown">
+<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 		{@html marked?.parse(data.project.content)}
 	</div>
