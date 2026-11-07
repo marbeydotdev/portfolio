@@ -14,6 +14,8 @@ dateEnd:
 colorHue: 20
 contributions:
   - helped this and ht
+  - Hello
+includedOnCv: true
 ---
 
 # header 1

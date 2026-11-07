@@ -1,37 +1,71 @@
 import matter from '@11ty/gray-matter';
-import { read } from '$app/server';
 import type { Blog, Project } from '#lib/types.ts';
+import { DATA_PATH } from '$app/env/private';
 
-export async function getProjectIndex() {
-	const projects: Project[] = [];
+let projects: Project[] = [];
+let blogs: Blog[] = [];
 
-	for (const file of Object.keys(import.meta.glob('/src/data/projects/**/index.md'))) {
-		const basePath = file.replace('/index.md', '');
-		const parsedFm = matter(await read(file).text());
-		projects.push({
+async function updateProjectIndex() {
+	const projectTemp = [];
+
+	const scan = new Bun.Glob(DATA_PATH + `/projects/**/index.md`).scan()
+
+	for await (const file of scan) {
+		const basePath = file.replace('\\index.md', '');
+		const parsedFm = matter(await Bun.file(file).text());
+		const identifier = basePath.split('\\').pop() ?? '';
+		projectTemp.push({
 			...parsedFm.data,
-			icon: basePath + '/icon.png',
-			identifier: basePath.split('/').pop() ?? '',
+			icon: `/assets/projects/${identifier}/icon.png`,
+			identifier,
 			content: parsedFm.content
 		} as Project);
 	}
 
-	return projects;
+	projects = projectTemp;
 }
+async function updateBlogIndex() {
+	const blogTemp = [];
 
-export async function getBlogIndex() {
-	const blogs: Blog[] = [];
+	for (const file of new Bun.Glob(DATA_PATH + '/blogs/**/index.md').scanSync()) {
+		const basePath = file.replace('\\index.md', '');
+		const parsedFm = matter(await Bun.file(file).text());
 
-	for (const file of Object.keys(import.meta.glob('/src/data/blogs/**/index.md'))) {
-		const basePath = file.replace('/index.md', '');
-		const parsedFm = matter(await read(file).text());
-
-		blogs.push({
+		blogTemp.push({
 			...parsedFm.data,
-			identifier: basePath.split('/').pop() ?? '',
+			identifier: basePath.split('\\').pop() ?? '',
 			content: parsedFm.content
 		} as Blog);
 	}
 
+	blogs = blogTemp;
+}
+
+await updateProjectIndex();
+await updateBlogIndex();
+
+function updateLoop() {
+	setTimeout(async () => {
+		await updateProjectIndex();
+		await updateBlogIndex();
+		updateLoop();
+	}, 5000);
+}
+
+updateLoop();
+
+export async function getProjects() {
+	return projects;
+}
+
+export async function getProject(identifier: string) {
+	return projects.find((p) => p.identifier == identifier) ?? null;
+}
+
+export async function getBlogs() {
 	return blogs;
+}
+
+export async function getBlog(identifier: string) {
+	return blogs.find((p) => p.identifier == identifier) ?? null;
 }

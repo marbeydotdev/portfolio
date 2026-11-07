@@ -1,5 +1,5 @@
-import { getBlogs } from '#lib/projects.server.ts';
+import { getBlogs } from '#lib/data.server.ts';
 
 export const load = async () => {
-	return {blogs: await getBlogs()}
-}
+	return { blogs: await getBlogs() };
+};

@@ -1,12 +1,12 @@
-import { getBlog } from '#lib/projects.server.ts';
 import { redirect } from '@sveltejs/kit';
+import { getBlog } from '#lib/data.server.ts';
 
 export const load = async (event) => {
-	const blog = await getBlog(event.params.slug)
+	const blog = await getBlog(event.params.slug);
 
 	if (!blog) {
-		redirect(303, "/blogs")
+		redirect(303, '/blogs');
 	}
 
-	return {blog: blog}
-}
+	return { blog: blog };
+};

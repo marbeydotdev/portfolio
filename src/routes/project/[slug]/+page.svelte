@@ -4,6 +4,8 @@ import { markedHighlight } from "marked-highlight";
 import { highlight } from "sugar-high";
 import { fly } from "svelte/transition";
 import type { PageProps } from "./$types";
+import { tagColor } from '#lib/helpers.ts';
+import ProjectMedia from '#components/project/ProjectMedia.svelte';
 
 let { data }: PageProps = $props();
 
@@ -29,11 +31,13 @@ let marked = new Marked().use(
 	</div>
 	<div class="mb-4 ml-14 flex items-center gap-3 text-xs">
 		{#each data.project.tags as tech (tech)}
-			<span class="bg-base-300 flex rounded-full px-3 py-1">{tech}</span>
+			<span style="background: {tagColor(tech)}" class="flex rounded-full px-3 py-1">{tech}</span>
 		{/each}
 	</div>
 	<p class="ml-14 block text-sm">{data.project.description}</p>
 </div>
+
+<ProjectMedia media={[{url: "", description: "Example media"}, {url: "", description: "Another example media"}]} />
 
 	<div in:fly={{y: 50, delay: 100}} class="markdown">
 <!-- eslint-disable-next-line svelte/no-at-html-tags -->

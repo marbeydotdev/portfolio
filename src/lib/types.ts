@@ -10,6 +10,7 @@ export interface Project {
 	dateEnd: string | null;
 	colorHue: number;
 	content: string;
+	includedOnCv: boolean;
 }
 export interface Blog {
 	identifier: string;
@@ -20,4 +21,9 @@ export interface Blog {
 	published: boolean;
 	date: string;
 	content: string;
+}
+
+export interface Media {
+	filename: string;
+	alt: string;
 }

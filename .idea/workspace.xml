@@ -4,21 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ blog fix">
+    <list default="true" id="decba2a5-9442-45ff-9c2d-1c9204bed3ff" name="Changes" comment="+ lightweight highlighting, cleanup, markdown formatting">
       <change afterPath="$PROJECT_DIR$/biome.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/helpers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/assets/[...path]/+server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project/ProjectMedia.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/ProjectMedia.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/projects/example/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects/example/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/projects/retime/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/projects/retime/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/projects.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/projects.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/blog template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/blogs/example/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/blogs/example/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/blogs/example2/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/blogs/example2/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/project template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/projects/example/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/projects/retime/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/projects/retime/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/projects/retime/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/data.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/data.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/projects.server.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/[slug]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug]/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/[slug]/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blogs/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blogs/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/project/[slug]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/placeholder.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,11 +112,13 @@
     "git-widget-placeholder": "components",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/zavid/WebstormProjects/portfolio/src/routes/blogs",
+    "last_opened_file_path": "C:/Users/zavid/WebstormProjects/portfolio/.svelte-kit/output/server/src",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -120,13 +133,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zavid\WebstormProjects\portfolio\.svelte-kit\output\server\src" />
       <recent name="C:\Users\zavid\WebstormProjects\portfolio\src\routes\blogs" />
       <recent name="C:\Users\zavid\WebstormProjects\portfolio\src\routes\blog\[slug]" />
       <recent name="C:\Users\zavid\WebstormProjects\portfolio\src\data\blogs\example" />
       <recent name="C:\Users\zavid\WebstormProjects\portfolio\src\data" />
-      <recent name="C:\Users\Zavid\WebstormProjects\portfolio\src\routes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zavid\WebstormProjects\portfolio" />
+      <recent name="C:\Users\zavid\WebstormProjects\portfolio\.svelte-kit\output" />
       <recent name="C:\Users\zavid\WebstormProjects\portfolio\src\routes\blogs" />
       <recent name="C:\Users\zavid\WebstormProjects\portfolio\src\routes\api\blogs" />
       <recent name="C:\Projects\jackedbox\zavid-portfolio\static\q3dashboard" />
@@ -162,7 +177,8 @@
       <workItem from="1793805833866" duration="188000" />
       <workItem from="1793806162745" duration="1085000" />
       <workItem from="1793807265469" duration="613000" />
-      <workItem from="1793807896458" duration="1751000" />
+      <workItem from="1793807896458" duration="6681000" />
+      <workItem from="1794084321209" duration="7370000" />
     </task>
     <task id="LOCAL-00001" summary="+ dockerfile">
       <option name="closed" value="true" />
@@ -260,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793733441041</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="+ lightweight highlighting, cleanup, markdown formatting">
+      <option name="closed" value="true" />
+      <created>1793809741720</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1793809741720</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +312,7 @@
     <MESSAGE value="+ light mode fix" />
     <MESSAGE value="+ bg" />
     <MESSAGE value="+ blog fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ blog fix" />
+    <MESSAGE value="+ lightweight highlighting, cleanup, markdown formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ lightweight highlighting, cleanup, markdown formatting" />
   </component>
 </project>
