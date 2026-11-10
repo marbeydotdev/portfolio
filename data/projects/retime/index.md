@@ -8,14 +8,14 @@ tags:
   - VST
   - Audio
   - Solo
-published: true
+published: false
 dateStart:
 dateEnd:
 colorHue: 20
 contributions:
   - helped this and ht
   - Hello
-includedOnCv: true
+includedOnCv: false
 ---
 
 # header 1

@@ -11,6 +11,7 @@ export interface Project {
 	colorHue: number;
 	content: string;
 	includedOnCv: boolean;
+	media: Media[];
 }
 export interface Blog {
 	identifier: string;
@@ -21,9 +22,11 @@ export interface Blog {
 	published: boolean;
 	date: string;
 	content: string;
+	media: Media[];
 }
 
 export interface Media {
 	filename: string;
+	name: string;
 	alt: string;
 }

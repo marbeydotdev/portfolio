@@ -37,7 +37,7 @@ let marked = new Marked().use(
 	<p class="ml-14 block text-sm">{data.project.description}</p>
 </div>
 
-<ProjectMedia media={[{url: "", description: "Example media"}, {url: "", description: "Another example media"}]} />
+<ProjectMedia media={data.project.media} />
 
 	<div in:fly={{y: 50, delay: 100}} class="markdown">
 <!-- eslint-disable-next-line svelte/no-at-html-tags -->
